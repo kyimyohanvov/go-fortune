@@ -61,7 +61,7 @@ jobs:
                   "fields": [
                     {
                       "type": "mrkdwn",
-                      "text": "*Email:*\n${{ user.email }}"
+                      "text": "*Email:*\nkyimyohanvov@gmail.com"
                     },
                     {
                       "type": "mrkdwn",
