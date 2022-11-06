@@ -2,9 +2,7 @@ name: Kyi Myo Han
 
 on:
   push:
-    branches: "v[0-9]+.[0-9]+"
-  env:
-    DOMAIN: https://kyimyohan-go-fortune-production.up.railway.app/                   
+    branches: "v[0-9]+.[0-9]+"                      
                
 jobs:
   build:
@@ -20,6 +18,7 @@ jobs:
           flag_branch: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DOMAIN: https://kyimyohan-go-fortune-production.up.railway.app/
 
       - name: install railway app
         run: npm i -g @railway/cli
