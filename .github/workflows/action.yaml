@@ -74,7 +74,7 @@ jobs:
                   "fields": [
                     {
                       "type": "mrkdwn",
-                      "text": "*Deployment:*\n$DOMAIN"
+                      "text": "*Deployment:*\nhttps://kyimyohan-go-fortune-production.up.railway.app"
                     }
                   ]
                 },
@@ -82,7 +82,7 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "<$DOMAIN|Open Application>"
+                    "text": "<https://kyimyohan-go-fortune-production.up.railway.app/|Open Application>"
                   }
                 }
               ]
