@@ -73,7 +73,7 @@ jobs:
                   "fields": [
                     {
                       "type": "mrkdwn",
-                      "text": "*Deployment:*\nhttps://kyimyohan-go-fortune-production.up.railway.app"
+                      "text": "*Deployment:*\n${{ secrets.KMH_GO_FORTUEN_WEBSITE_URL }}"
                     }
                   ]
                 },
@@ -81,12 +81,12 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "<https://kyimyohan-go-fortune-production.up.railway.app/|Open Application>"
+                    "text": "<${{ secrets.KMH_GO_FORTUEN_WEBSITE_URL }}/|Open Application>"
                   }
                 }
               ]
             }
         env:
-          SLACK_WEBHOOK_URL: ${{ secrets.KMH_SLACK_TOKEN }}
+          SLACK_WEBHOOK_URL: ${{ secrets.MY_SLACK_CHANNEL_FOR_TESTING }}
           SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
         
